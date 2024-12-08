@@ -1,3 +1,3 @@
-# Programação Funcional - Atividades
+# Functional Programming - Activities
 
-## Este repositório foi criado para armazenar as atividades desenvolvidas na disciplina **Programação Funcional**, ofertada pelo Departamento de Computação da Universidade Federal de Sergipe (UFS).
+## This repository was created to store the activities developed in the discipline **Functional Programming**, offered by the Department of Computing at the Federal University of Sergipe (UFS).
