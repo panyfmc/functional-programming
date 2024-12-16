@@ -4,7 +4,9 @@
 // A sua Saída é 1 se e somente se apenas uma das suas Entradas é 1
 
 function verifyXor(a, b) {
-    if ((a || b) && ~(a && b)) {
+    //  as condições precisam ser verdadeiras simultaneamente
+
+    if ((a || b) && ~(a && b)) {    // a ou b é V && não ambos são verdadeiros ~(0 && 0)
         return true
     } else {
         return false
