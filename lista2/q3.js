@@ -7,4 +7,19 @@ function verTriangulo(a, b, c) {
         return false
     }
 }
-console.log(`verificação: ${verTriangulo(2, 3, 4)}`)
+
+const lado1 = parseFloat(prompt('Digite o primeiro lado: '))
+const lado2 = parseFloat(prompt('Digite o segundo lado: '))
+const lado3 = parseFloat(prompt('Digite o terceiro lado: '))
+
+const checkout = verTriangulo(lado1, lado2, lado3)
+
+function result(checkout) {
+    if (!checkout) {
+        return "Não é um triângulo."
+    } else {
+        return "É um triângulo."
+    }
+}
+
+console.log(result(checkout))
