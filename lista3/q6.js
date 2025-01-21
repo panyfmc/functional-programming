@@ -10,5 +10,4 @@ const c1 = parseFloat(prompt('Digite o valor de c: '))
 
 const checkTresValores = comparacao(a1, b1, c1)
 
-
 console.log(checkTresValores)
