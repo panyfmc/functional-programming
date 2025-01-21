@@ -13,10 +13,10 @@ function DistEntrePontos (x1, x2, y1, y2) {
 
     }
     // Retas não paralelas
-    return Math.sqrt(((x2 - x1) ** 2) + ((y2 - y1) ** 2));   
+    return Math.sqrt(((x2 - x1) ** 2) + ((y2 - y1) ** 2))
 
 }
 
-console.log(`Distância calculada: ${DistEntrePontos(2, 3, 4, 5)}`);
+console.log(`Distância calculada: ${DistEntrePontos(2, 3, 4, 5)}`)
 
 
