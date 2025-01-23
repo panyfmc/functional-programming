@@ -14,4 +14,5 @@ const distEntrePontos = (x2, x1, y2, y1) => (x2 == x1) ? (y2 - y1) : (y2 == y1) 
 
 const calcDist = distEntrePontos(xA, xB, yA, yB)
 
-console.log('O resultado da distância entre os pontos é:', calcDist)
+// .toFixed() para delimitar os números decimais em 4
+console.log('O resultado da distância entre os pontos é:', calcDist.toFixed(4))
