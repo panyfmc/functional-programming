@@ -1,13 +1,18 @@
 //Programa que calcula o "ou-exclusivo" entre dois valores-verdade (verdadeiro ou falso),
 // dado por a⊗b=(a∨b) ∧ ¬(a∧b)
 
-// Atribuição XOR bit-a-bit	x ^= y	x = x ^ y
+const verifyXor = (a, b) => (a || b) && !(a && b) 
 
-const verifyXor = (a, b) => (a ^ b) ? "1" : "0" // Se a != b return 1, a == b return 0
+const value1 = prompt("Insira o primeiro valor (true ou false):").toLowerCase() === "true"      // Só é true se digitar TRUE
+const value2 = prompt("Insira o segundo valor (true ou false):").toLowerCase() === "true"       // Qualquer outro é FALSE
 
-const value1 = parseFloat(prompt("Insira o primeiro valor: "))
-const value2 = parseFloat(prompt("Insira o segundo valor: "))
-
+// Calcular o resultado
 const result = verifyXor(value1, value2)
 
-console.log(result)
+// Exibir o resultado no console
+console.log(`XOR(${value1}, ${value2}) = ${result}`)
+
+// xor(true, true)          // false
+// xor(true, false)         // true
+// xor(false, true)         // true
+// xor(false, false)        // false
